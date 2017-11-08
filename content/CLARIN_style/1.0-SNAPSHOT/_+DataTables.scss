@@ -1,0 +1,53 @@
+@import '_';
+
+table.datatables-table {
+    border-collapse: collapse !important;
+    position: relative !important;
+    border-spacing: 0 !important;
+    border: 0 !important;
+    background-clip: padding-box;
+    //background-repeat: no-repeat;
+    //background-position: center top;
+
+    th, td {
+        border: 0 !important;
+        //background-clip: content-box !important;
+    }
+
+    td.non_textual {
+        text-align: center;
+    }
+
+    thead {
+        tr {
+            //padding: $indent $indent !important;
+            font-weight: bolder !important;
+            text-align: center;
+            border: 0 !important;
+        }
+
+        th:first-child {
+            border-top-left-radius: 6px !important;
+            border-bottom-left-radius: 6px !important;
+        }
+
+        th:last-child {
+            border-top-right-radius: 6px !important;
+            border-bottom-right-radius: 6px !important;
+        }
+
+        th {
+            background-color: $clarin_blue !important;
+            border-collapse: collapse !important;
+            //background-clip: content-box !important;
+            background-attachment: scroll !important;
+            //border-bottom: 0px !important;
+            text-align: center;
+            color: #fff;
+            a {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+}
