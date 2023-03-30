@@ -36,24 +36,36 @@
     <script src="./swagger/swagger-ui-bundle.js" charset="UTF-8"> </script>
     <script src="./swagger/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
     <script>
+    /*
+    {
+        url: "https://contentsearch.clarin.eu/openapi.json",
+        name: "Federated Content Search"
+    }
+    */
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
         urls: [{
-          url: "https://collections.clarin.eu/swagger.json",
-          name: "Virtual Collection Registry API"
+            url: "https://collections.clarin.eu/swagger.json",
+            name: "Virtual Collection Registry API"
         }, {
-          url: "https://beta-collections.clarin.eu/swagger.json",
-          name: "Virtual Collection Registry API (beta)"
+            url: "https://beta-collections.clarin.eu/swagger.json",
+            name: "Virtual Collection Registry API (beta)"
         }, {
-          url: "https://alpha-collections.clarin.eu/swagger.json",
-          name: "Virtual Collection Registry API (alpha)"
-        }, {
-          url: "https://alpha-dog.clarin.eu/api/swagger.json",
-          name: "Data Object Gateway API (alpha)"
+            url: "https://beta-contentsearch.clarin.eu/openapi.json",
+            name: "Federated Content Search (beta)"
         }, {
             url: "https://beta-linkchecker.clarin.eu/api/v3/api-docs",
             name: "Link Checker (beta)"
+        }, {
+            url: "https://alpha-collections.clarin.eu/swagger.json",
+            name: "Virtual Collection Registry API (alpha)"
+        }, {
+            url: "https://alpha-contentsearch.clarin.eu/openapi.json",
+            name: "Federated Content Search (alpha)"
+        }, {
+            url: "https://alpha-dog.clarin.eu/api/swagger.json",
+            name: "Data Object Gateway API (alpha)"
         }],
         dom_id: '#swagger-ui',
         deepLinking: true,
